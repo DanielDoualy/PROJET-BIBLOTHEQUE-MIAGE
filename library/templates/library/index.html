@@ -1,11 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bibliothèque MIAGE</title>
-</head>
-<body>
-    <h1>Bonjour, chers étudiants</h1>
-</body>
-</html>
+{% extends "library/layout.html" %}
+
+{% block title %}Accueil - Bibliothèque MIAGE{% endblock %}
+
+{% block content %}
+    <header>
+        <h1>Bienvenue sur la plateforme Bibliothèque MIAGE</h1>
+        <p>Votre espace centralisé de ressources pédagogiques</p>
+        <p>Ici, vous trouverez tout ce dont vous avez besoin pour réussir votre parcours MIAGE :</p>
+        <ul>
+            <li> Support de cours complets</li>
+            <li> Sujets de devoirs et corrigés</li>
+            <li> Annales d'examens</li>
+            <li> Ressources complémentaires</li>
+        </ul>
+        <p>Utilisez le menu "Niveaux d'études" en haut de la page pour accéder aux ressources de votre année.</p>
+    </header>
+{% endblock %}
